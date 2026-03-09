@@ -5,6 +5,7 @@ import react from "@vitejs/plugin-react";
 
 // https://vite.dev/config/
 export default defineConfig({
+  base: '/',
   plugins: [
     react({
       babel: {
@@ -12,13 +13,5 @@ export default defineConfig({
       }
     }),
     tailwindcss()
-  ],
-  server: {
-    proxy: {
-      '/api': {
-        target: 'http://localhost:3000',
-        changeOrigin: true
-      }
-    }
-  }
+  ]
 });
