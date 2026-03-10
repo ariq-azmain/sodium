@@ -6,6 +6,10 @@ import {BallCanvas} from '../canvas';
 const Members = () => {
   return (
     <section className='flex flex-row flex-wrap justify-center'>
+    <h1  className='text-white font-black md:text-[60px] sm:text-[50px]
+    xs:text-[40px] text-[30px]'>
+      Mambers Of <span className='sodium'>SODIUM</span>
+    </h1>
     {
       members.map(({id, name, dec, fild, img, link, color }) => (
         <div key={id} className='!w-[180px] !h-fit !my-[10px] !mx-[20px]'>
