@@ -21,7 +21,7 @@ import { Alert } from './components'
 gsap.registerPlugin(SplitText, ScrollTrigger)
 
 const App = () => {
-  return (
+   return (
     <BrowserRouter>
       <BG />
       <NavBar />
