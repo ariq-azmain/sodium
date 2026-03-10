@@ -1,4 +1,4 @@
-import { BrowserRouter, Routes, Route } from 'react-router-dom'
+import { HashRouter, Routes, Route } from 'react-router-dom'
 
 import gsap from 'gsap'
 import { ScrollTrigger, SplitText } from 'gsap/all'
@@ -22,7 +22,7 @@ gsap.registerPlugin(SplitText, ScrollTrigger)
 
 const App = () => {
    return (
-    <BrowserRouter>
+    <HashRouter>
       <BG />
       <NavBar />
       <Alert />
@@ -42,7 +42,7 @@ const App = () => {
       <br />
       <br />
       <Footer />
-    </BrowserRouter>
+    </HashRouter>
   )
 }
 
